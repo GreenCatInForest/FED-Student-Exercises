@@ -293,7 +293,55 @@
           </ul>
         </article>
       </section>
-      <section id="choiceUser"></section>
+      <section id="choiceUser">
+        <article>
+          <h2>Time to choose!</h2>
+          <form action="" method="post">
+            <fieldset>
+              <legend>Personal</legend>
+              <label for="name">Your name</label>
+              <input
+                type="text"
+                name="name "
+                id="name"
+                value="Christopher"
+                required
+              />
+              <label for="lastName">Your Last name</label>
+              <input
+                type="text"
+                name="lastName"
+                id="lastName"
+                value="Nolan"
+                required
+              />
+
+              <label for="email">Your email</label>
+              <input type="email" name="email" id="email" required />
+              <label for="adress">Your adress</label>
+              <input
+                type="text"
+                name="adress"
+                id="adress"
+                aria-required="true"
+              />
+            </fieldset>
+            <fieldset>
+              <legend>Films</legend>
+              <label for="list">Your favourite films:</label>
+              <textarea
+                name="list"
+                id="list"
+                cols="80"
+                rows="10"
+                required
+                value="Here is a space for you to write your top-10 favourite movies"
+              ></textarea>
+            </fieldset>
+            <button type="submit">Send to us!</button>
+          </form>
+        </article>
+      </section>
     </main>
     <footer>
       <a
