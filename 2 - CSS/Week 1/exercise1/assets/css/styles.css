@@ -1,0 +1,31 @@
+body {
+  background-color: lightblue;
+  font-family: "Open Sans", sans-serif;
+  margin: 0;
+  padding-left: 10%;
+  max-width: fit-content;
+}
+
+#dogsMainPage {
+  width: 50%;
+}
+
+img:hover {
+  background-color: #004369;
+  transition: 0.2s ease-in;
+}
+
+#catImage:hover {
+  filter: brightness(50%);
+}
+
+#githubLinkInFooter {
+  /*I'm not really happy with it: how to align elements vertically, to make them both be at one line in the bottom?*/
+  display: flex;
+  align-items: center;
+  font-size: smaller;
+}
+
+#githubLinkInFooter img {
+  width: 15%;
+}
