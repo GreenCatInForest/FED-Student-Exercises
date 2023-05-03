@@ -8,21 +8,57 @@
     <title>JS 1 week practice</title>
   </head>
   <body>
-    <header><h1>JS 1 week practice</h1></header>
+    <header>
+      <h1>JS practice</h1>
+      <nav id="topNav">
+        <ul id="burgerTopNav">
+          <li class="burger burger-top"></li>
+          <li class="burger burger-meat"></li>
+          <li class="burger burger-bottom"></li>
+        </ul>
+        <ul id="listTopNav" class="hidden">
+          <li><a href="#1WeekPractice">1 week practice</a></li>
+          <li><a href="#2WeekPractice">2 week practice</a></li>
+          <li>3 week practice</li>
+        </ul>
+      </nav>
+    </header>
     <main>
-      <h2>Let's multiply numbers!</h2>
-      <button onclick="addNumbers()">I want to try!</button>
-      <p id="resultAdd"></p>
+      <section id="1WeekPractice">
+        <h2>1 week practice - Let's multiply numbers!</h2>
+        <button onclick="addNumbers()">I want to try!</button>
+        <p id="resultAdd"></p>
+      </section>
+
+      <section id="2WeekPractice">
+        <h2>2 week practice #1 - Let's find if the number is even or odd.</h2>
+        <button onclick="evenOrOdd()">Find for me</button>
+        <p id="resultevenOrOdd"></p>
+      </section>
+
+      <section id="2WeekPractice1">
+        <h2>2 week practice #2 - Guess the number.</h2>
+        <p>Check your intuition: try to guess the number between 0 and 10.</p>
+        <button onclick="numberGuesser()">I think the number is:</button>
+        <p id="resultGuessNumber"></p>
+      </section>
+
+      <section id="2WeekPractice2">
+        <h2>2 week practice #2 - Check if number can be divided at 3 or 5</h2>
+        <button onclick="devision3And5()">Let's do it</button>
+        <p id="resultChecker3And5"></p>
+      </section>
     </main>
     <footer>
       <a href="https://github.com/GreenCatInForest?tab=repositories"
         ><img
           id="logoGithub"
-          src="/Exercise2/assets/image/github-mark.png"
+          src="assets/image/github-mark.png"
           alt="Github mark"
       /></a>
       <h3>--->&nbsp;&nbsp;My Github</h3>
     </footer>
+
     <script src="assets/js/app.js" defer></script>
   </body>
 </html>
