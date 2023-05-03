@@ -47,24 +47,18 @@ const numberGuesser = () => {
 //3 & 5 devision
 
 const devision3And5 = () => {
-
   let numberToCheck = parseInt(prompt("Let's do it"), 10);
-
-  let devisionChecker = () => {
-    if (((numberToCheck%3)=0)&&((numberToCheck%5)=0)){
-      return devisionChecker = "FizzBuzz";
-    }
-    else if (((numberToCheck%3)=0)&&(((numberToCheck%5)!=0)))
-    {return devisionChecker = "Fizz";}
-
-    else if (((numberToCheck%3)!=0)&&(((numberToCheck%5)=0)))
-    {return devisionChecker = "Buzz";}
-
-    else {return `${numberToCheck} devides at something else`;}
+  let devisionChecker;
+  if (numberToCheck % 3 === 0 && numberToCheck % 5 === 0) {
+    devisionChecker = "FizzBuzz";
+  } else if (numberToCheck % 3 == 0 && numberToCheck % 5 !== 0) {
+    devisionChecker = "Fizz";
+  } else if (numberToCheck % 3 !== 0 && numberToCheck % 5 == 0) {
+    devisionChecker = "Buzz";
+  } else {
+    devisionChecker = `${numberToCheck} devides at something else`;
   }
-
-    document.getElementById(
-      "resultChecker3And5"
-    ).innerHTML = `Here is information about your number: ${devisionChecker}!`;
-    
-  }
+  document.getElementById(
+    "resultChecker3And5"
+  ).innerHTML = `Here is information about your number: ${devisionChecker}!`;
+};
