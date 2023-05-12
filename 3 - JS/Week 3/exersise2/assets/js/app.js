@@ -15,10 +15,10 @@ const getArraysFromNumber = () => {
 
   for (i = 0; i < inputToNumber; i++) {
     let checkEven = i % 2;
-    if (checkEven !== 0) {
-      arrayOddDigitsFromNumber.push(i);
+    if (checkEven === 0) {
+      arrayEvenDigitsFromNumber.push(i);
     }
-    arrayEvenDigitsFromNumber.push(i);
+    arrayOddDigitsFromNumber.push(i);
   }
   console.log(arrayOddDigitsFromNumber);
   console.log(arrayEvenDigitsFromNumber);
